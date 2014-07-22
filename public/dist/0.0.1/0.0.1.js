@@ -28217,6 +28217,7 @@ angular.module('module', [
 angular.module('app', [
   'module',
   'ngRoute',
+  'ui.bootstrap'
 ])
 
 /**
@@ -28263,4 +28264,4 @@ angular.element(document).ready(function() {
   angular.bootstrap(document, ['app']);
 });
 
-angular.module("app").run(["$templateCache",function(a){a.put("/js/app/templates/app.html","<h1>Hi! Welcome</h1>\n\n<p>Main application entry page</p>\n"),a.put("/js/app/templates/header.html",'<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">\n  <div class="container">\n    <div class="navbar-header">\n      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\n        <span class="sr-only">Toggle navigation</span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n      </button>\n      <a class="navbar-brand" href="#">App</a>\n    </div>\n    <div class="collapse navbar-collapse">\n      <ul class="nav navbar-nav">\n        <li class="active"><a href="#">Home</a></li>\n        <li><a href="#module">Module</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</div>\n'),a.put("/js/module/templates/module.html",'<div class="module-wrapper">\n  <h1>Module</h1>\n\n  <p class="description">\n    This is a module page. For example a login page or articles listing page\n  </p>\n</div>\n')}]);
+angular.module("app").run(["$templateCache",function(a){a.put("/js/app/templates/app.html","<h1>Hi! Welcome</h1>\n\n<p>Main application entry page</p>\n"),a.put("/js/app/templates/header.html",'<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">\n  <div class="container">\n    <div class="navbar-header">\n      <button type="button" class="navbar-toggle" data-toggle="collapse" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">\n        <span class="sr-only">Toggle navigation</span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n        <span class="icon-bar"></span>\n      </button>\n      <a class="navbar-brand" href="#">App</a>\n    </div>\n    <div collapse="navCollapsed" class="collapse navbar-collapse">\n      <ul class="nav navbar-nav">\n        <li class="active"><a href="#">Home</a></li>\n        <li><a href="#module">Module</a></li>\n      </ul>\n    </div><!--/.nav-collapse -->\n  </div>\n</div>\n'),a.put("/js/module/templates/module.html",'<div class="module-wrapper">\n  <h1>Module</h1>\n\n  <p class="description">\n    This is a module page. For example a login page or articles listing page\n  </p>\n</div>\n')}]);

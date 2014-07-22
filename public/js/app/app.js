@@ -7,6 +7,7 @@
 angular.module('app', [
   'module',
   'ngRoute',
+  'ui.bootstrap'
 ])
 
 /**
