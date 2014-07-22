@@ -1,0 +1,34 @@
+{
+  "name": "angular-bower-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Madhusudhan Srinivasa <me@madhums.me>"
+  ],
+  "description": "A boilerplate for building web apps with angular, bower and gulp",
+  "keywords": [
+    "angular",
+    "bower",
+    "gulp"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "~1.2.20",
+    "angular-route": "~1.2.20",
+    "angular-touch": "~1.2.20",
+    "angular": "~1.2.20",
+    "less": "~1.7.3",
+    "angular-bootstrap": "~0.11.0",
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1",
+    "modernizer": "~2.8.2"
+  }
+}

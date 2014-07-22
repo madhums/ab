@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="pageTitle + ' - App'">App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Less -->
+    <link rel="stylesheet/less" type="text/css" href="/less/app.less" />
+    <!-- Fontawesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <script src="/components/modernizer/modernizr.js"></script>
+
+    <script type="text/javascript">
+      less = {
+        logLevel: 0
+      };
+
+      var supported = function () {
+        return Modernizr.localstorage &&
+          Modernizr.geolocation &&
+          Modernizr.inputtypes;
+      };
+
+      if (!supported()) {
+        alert('Some features might not work. Please use a modern browser like chrome or update your browser!');
+      }
+
+      window.apiURL = '';
+    </script>
+
+    <!-- Dependencies -->
+    <script src="/components/less/dist/less-1.7.0.js"></script>
+    <!-- <script src="/components/jquery/dist/jquery.js"></script> -->
+    <script src="/components/angular/angular.js"></script>
+    <script src="/components/angular-resource/angular-resource.js"></script>
+    <script src="/components/angular-route/angular-route.js"></script>
+    <script src="/components/angular-touch/angular-touch.js"></script>
+    <script src="/components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+    <!-- APPLICATION_SCRIPTS -->
+    <script src="/js/module/resource.js"></script>
+    <script src="/js/module/module.js"></script>
+    <script src="/js/app/app.js"></script>
+
+  </head>
+  <body ng-controller="AppCtrl">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="header" ng-include="headerTemplate"></div>
+    <div class="container">
+      <div ng-view class="main-content" role="main"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "dependencies": [
+    "angular/angular.js",
+    "angular-resource/angular-resource.js",
+    "angular-route/angular-route.js",
+    "angular-touch/angular-touch.js",
+    "angular-bootstrap/ui-bootstrap-tpls.js"
+  ],
+  "files": [
+    "module/resource.js",
+    "module/module.js",
+    "app/app.js"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "angular-bower-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate for building web apps with angular, bower and gulp",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.6.1",
+    "excel-export": "^0.3.11",
+    "serve-static": "^1.3.2"
+  },
+  "repository": "",
+  "author": "Madhusudhan Srinivasa",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "f4a5f0d3221de3d9628265d0c537f13ce4790979",
+  "devDependencies": {
+    "nodemon": "^1.2.1",
+    "gulp": "^3.8.6",
+    "gulp-concat": "^2.3.3",
+    "gulp-jshint": "^1.7.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-less": "^1.3.2",
+    "gulp-sourcemaps": "^1.1.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-angular-templatecache": "^1.2.1"
+  }
+}
