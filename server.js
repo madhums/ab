@@ -9,7 +9,7 @@ var compression = require('compression');
 var stubs = require('./stubs');
 
 var app = express();
-var env = process.env.NODE_ENV || 'production';
+var env = process.env.NODE_ENV || 'development';
 var port = process.env.PORT || 4000;
 var options = {
   'index': [env + '.html']
