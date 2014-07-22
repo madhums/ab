@@ -10,9 +10,15 @@ $ npm install
 $ bower install
 ```
 
+## Start
+
+```
+$ npm start
+```
+
 Checkout the `public` folder. `js` folder contains all the modules and js files.
 
-## Gulp
+## Releases
 
 Run
 
@@ -20,7 +26,7 @@ Run
 $ gulp
 ```
 
-to create a new build or to update an old build. Make sure you change the version of the application in `js/app.json`. If you are adding more modules and dependencies, make sure you update them in `js/app.json` and also include it in `development.html`.
+This would create a new build or update an old one. Make sure you change the version of the application in `js/app.json`. If you are adding more modules and dependencies, make sure you update them in `js/app.json` and also include it in `development.html`.
 
 Running gulp will create new distribution in `dist` folder.
 

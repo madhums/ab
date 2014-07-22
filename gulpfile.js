@@ -27,7 +27,7 @@ var jsFiles = _js.files.map(getPath('public/js/'));
 var js = jsDependencies.concat(jsFiles);    // source files
 var dest = 'public/dist/' + _js.version;    // destination directory
 var jsFile = _js.version + '.js';           // destination file name
-var minJsFile = _js.version + '.min.js';     // destination file name for minified files
+var minJsFile = _js.version + '.min.js';    // destination file name for minified files
 var cssFile = _js.version + '.css';         // destination file name for css
 var css = 'public/less/app.less';           // source less file
 
