@@ -19,6 +19,7 @@ var options = {
 app.use(compression());
 app.use(serveStatic(__dirname + '/public', options));
 
+// Stubs
 stubs(app);
 
 // Start listening
