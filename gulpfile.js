@@ -106,5 +106,7 @@ gulp.task('default', [
     'jsminify',
     'css'
   ], function() {
-  // place code for your default task here
+  // Clean up
+  return gulp.src(dest + '/templates.js', { read: false })
+    .pipe(clean({ force: true }))
 });
