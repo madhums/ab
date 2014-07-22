@@ -1,4 +1,5 @@
-## angular-bower-gulp-boilerplate
+## angular-boilerplate (ab)
+A boilerplate for building angular apps with bower, gulp, angular-ui, bootstrap and less.
 
 ## Installation
 
