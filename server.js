@@ -5,6 +5,7 @@
 
 var express = require('express');
 var serveStatic = require('serve-static');
+var compression = require('compression');
 var stubs = require('./stubs');
 
 var app = express();
@@ -15,7 +16,9 @@ var options = {
 };
 
 // Middlewares
+app.use(compression());
 app.use(serveStatic(__dirname + '/public', options));
+
 stubs(app);
 
 // Start listening
