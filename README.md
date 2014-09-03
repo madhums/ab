@@ -7,7 +7,6 @@ Make sure you have npm and bower installed on your machine. Clone the repo and
 
 ```
 $ npm install
-$ bower install
 ```
 
 ## Start
